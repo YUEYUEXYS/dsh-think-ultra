@@ -1,0 +1,47 @@
+{
+  "name": "dsh-think-ultra",
+  "version": "0.10.0-experimental-preview",
+  "description": "Reasoning layer for the official DeepSeek Harness. Every outgoing request stays pinned to native max effort, with isolated Flash/Vision/Pro depth controls, stability axes, reasoning toolboxes and a metacognition loop built above it. Delivered build only; commercial operation is allowed, reverse analysis, modification, extraction and re-upload are not - see LICENSE.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE",
+    "dsh-think-ultra.config.json.example"
+  ],
+  "engines": {
+    "node": ">=22.6"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "dependencies": {
+    "schemastery": "^3.18.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-runtime": "^0.11.0-rc.2",
+    "@deepseek-ai/dsh-client-ui-conversation": "^0.11.0-rc.2",
+    "@deepseek-ai/dsh-client-ui-sidebar": "^0.11.0-rc.2",
+    "@deepseek-ai/dsh-agent": "^0.11.0-rc.2",
+    "@deepseek-ai/dsh-invariants": "^0.11.0-rc.2"
+  }
+}

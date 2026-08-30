@@ -1,0 +1,740 @@
+================================================================================
+                     DSH-THINK-ULTRA LICENCE AGREEMENT
+   Commercial-Use Grant · Official-Host-Scoped · No Modification · No Extraction
+                  · No Reverse · Fenced Grey Zone for Off-Host Use
+Version 1.0 (Delivered-Build Terms)
+Copyright (c) 2026 YUEYUEXYS and the dsh-think-ultra authors ("the Author").
+All rights reserved.
+================================================================================
+
+IMPORTANT: READ THIS AGREEMENT IN FULL BEFORE INSTALLING, COPYING, ACCESSING,
+RUNNING, DEPLOYING OR COMMERCIALISING THE SOFTWARE. BY DOING ANY OF THESE
+THINGS YOU CONFIRM THAT YOU HAVE READ, UNDERSTOOD AND AGREED TO BE BOUND BY
+THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE SOFTWARE AND
+DELETE EVERY COPY IN YOUR POSSESSION OR CONTROL.
+
+
+--------------------------------------------------------------------------------
+RECITALS
+--------------------------------------------------------------------------------
+A. The Author makes available a software plugin for the third-party host
+application DeepSeek Harness ("DSH"), together with its data files, rule
+sets, configuration samples, native helper binaries and accompanying
+materials, collectively defined below as the "Software".
+
+B. The Software is delivered only in the form the Author chooses to publish.
+Its readable source, its internal construction and its production tooling are
+not supplied and are not licensed.
+
+C. The Author intends, as a matter of deliberate policy, (i) to grant Licensees
+the widest possible freedom to build commercial activity and earn revenue with
+the Software as delivered, while (ii) prohibiting, as a matter of equal
+deliberateness, any modification, extraction of its technical materials,
+reverse analysis, reconstruction or re-publication. Part II states what you may
+do at length; Part III states what you may not do at length; Part IV states the
+single test that separates the two.
+
+D. The parties agree that the permitted and prohibited conduct below is stated
+exhaustively and precisely so that a Licensee acting in good faith is never in
+doubt about what commercial activity is allowed.
+
+E. The Software is designed to run inside the official, unmodified DeepSeek
+Harness ecosystem, where it is expressly allowed to coexist and combine with
+other plugins of that ecosystem. It is not licensed for non-official host
+builds. Operating the unmodified Delivered Build inside a different, non-DSH
+agent application is a deliberately fenced grey zone, described in full in
+Article 9; it is neither an authorised deployment nor, standing alone, a
+hard-prohibited act, and it carries no support, no warranty and no immunity
+from the rest of Part III.
+
+F. The Author also intends that the consequences of crossing the hard lines be
+stated plainly and in advance, in Article 27, so that the cost of doing so is
+known before anyone begins.
+
+
+================================================================================
+PART I — DEFINITIONS AND INTERPRETATION
+================================================================================
+
+ARTICLE 1. DEFINITIONS
+1.1 "Agreement" means this licence agreement, together with any notice or
+marker attached to a Delivered Build.
+1.2 "Software" means the dsh-think-ultra plugin in every form in which it is
+delivered, including its code, bytecode, instruction streams, executables,
+data, rule sets, configuration samples, prompts embedded in it, and its
+documentation.
+1.3 "Delivered Build" means the specific, versioned copy of the Software that
+you actually received; rights attach to that build only, not to any other or
+future build.
+1.4 "Delivered Form" means the precise file set and representation in which
+the Delivered Build is provided. The readable source is not part of the
+Delivered Form and is not made available.
+1.5 "Author" means the copyright holder named above and its permitted
+successors and assigns.
+1.6 "Licensee", "you" and "your" mean the individual or legal entity exercising
+rights under this Agreement, and that entity's directors, employees and
+contractors acting within its scope.
+1.7 "Commercial Use" means any activity directed, directly or indirectly,
+toward business, professional, revenue, fundraising, promotional or monetary
+advantage, including activity performed for cost savings, for internal
+business benefit, or on behalf of paying or non-paying customers of a business.
+1.8 "Service" means any offering in which a customer receives the result,
+output, access or benefit of the Software's operation while you remain the
+operator of the Delivered Build, and the customer does not receive an
+independent, transferable copy to run apart from you.
+1.9 "Customer" means any recipient of a Service, whether paying or free.
+1.10 "Modify"/"Modification" means any alteration of the Delivered Build, by
+any means, including editing, patching, localising, fixing, adding, removing,
+reordering, recompiling, re-bundling, re-skinning the code, changing embedded
+parameters, or producing an adapted or derivative copy, however minor,
+including a change of a single byte, token, name, value, asset or line.
+1.11 "Derivative" means any work, in any form, that is based on, derived from,
+adapted from, or produced by modifying, translating, transforming, porting or
+incorporating the Delivered Build or any part of it.
+1.12 "Reverse Analysis" means any activity whose object is to inspect,
+understand, recover or reproduce the internal construction, logic, algorithms,
+data structures, instruction encoding, parameters, prompts, rule sets or
+behaviour of the Delivered Form, and includes decompilation, disassembly,
+decryption, decoding, unpacking, de-obfuscation, tracing, profiling for
+understanding, static analysis, dynamic analysis, differential testing used
+for understanding, and memory or traffic inspection.
+1.13 "Technical Materials" means, regardless of the form in which they are
+expressed: ideas, concepts, schemes, architecture, design, algorithms, logic,
+control and scheduling methods, techniques, know-how, workflows, pipelines,
+heuristics, parameters, thresholds, weights, prompts, prompt structures and
+templates, rule sets, toolbox designs, data structures, file formats, naming
+and ordering schemes, and any other technical or creative content embodied in,
+generated by, or discernible from the Software.
+1.14 "Extraction" means removing, copying, abstracting, summarising,
+transcribing, distilling, re-expressing, translating into another language or
+formalism, or otherwise taking Technical Materials out of the Software for use
+outside it, whether manually, by tooling, by AI-Assisted Means, or from memory
+after inspection, and whether or not the result is word-for-word identical.
+1.15 "AI-Assisted Means" means any automated, statistical, symbolic, learned
+or model-driven system, including large language models, code models,
+machine-learned analysers, symbolic executors, automated reasoners, and
+automated transcription or summarisation tools.
+1.16 "Circumvention" means avoiding, disabling, weakening, bypassing,
+patching, hooking, instrumenting or defeating any Technical Protection Measure.
+1.17 "Technical Protection Measure" means any protective, self-integrity,
+self-defence, binding, anti-analysis, timing, or tamper-reaction mechanism in
+the Software.
+1.18 "Host Environment" means DeepSeek Harness (DSH), the third-party host
+application and the specific DSH profile and runtime versions a Delivered
+Build targets.
+1.19 "Interoperability Layer" means your own, independently written materials
+that (i) reside outside the Delivered Build, (ii) interact with it only through
+its ordinary configuration and exposed behaviour, and (iii) do not Modify it
+and contain no Extracted Technical Materials.
+1.20 "Redistribution" means making a copy of the Delivered Build available to
+any third party by any channel, including repository, registry, marketplace,
+download, image, archive, attachment, preload or physical transfer.
+1.21 "Official Host" means a genuine, unmodified, officially distributed build
+or service of DeepSeek Harness, at a version the Delivered Build declares it
+supports, together with that host's official plugin ecosystem, loader, agent
+runtime, conversation surface and plugin directory. A host whose binaries,
+loader, runtime, billing path or plugin pipeline have been patched, forked,
+mirrored, re-hosted, emulated, stubbed or otherwise altered is not an Official
+Host.
+1.22 "Non-Official Host" means any DSH-derived or DSH-claiming runtime that is
+not an Official Host, including forks, private or self-hosted reimplementations,
+cracked or licence-bypassed builds, compatibility shims, and any stub, mock or
+emulator standing in for DSH.
+1.23 "Foreign Agent Software" means any agent, LLM client, assistant runtime,
+IDE extension, orchestration framework, chat platform or other software other
+than the Official Host in or through which the Delivered Build might be made to
+run.
+1.24 "Companion Plugin" means a separate plugin, authored independently of the
+Software, that is loaded inside the Official Host and coexists with the
+Software through the host's ordinary, official plugin interfaces.
+1.25 "Ecosystem" means the Official Host, its official plugin channels and
+runtime surfaces, and the Companion Plugins lawfully loaded within them, taken
+together.
+
+ARTICLE 2. INTERPRETATION
+2.1 Headings are for convenience only and do not affect construction.
+2.2 "including" and "includes" mean "including, without limitation".
+2.3 Words in the singular include the plural and vice versa; references to a
+person include entities.
+2.4 The parties agree this Agreement shall not be construed against the
+drafter; it was negotiated in the sense that its terms are stated
+exhaustively and were available for review before any use.
+2.5 Every permission in Part II is read subject to the prohibitions in Part
+III; nothing in Part II grants a right Part III withholds.
+2.6 The Authorised Operating Scope in Article 3 is a precondition of every
+right granted: conduct outside that scope is never rescued by the breadth of
+any commercial permission elsewhere.
+
+
+================================================================================
+PART II — WHAT YOU MAY DO (THE COMMERCIAL GRANT, STATED AT LENGTH)
+================================================================================
+
+ARTICLE 3. AUTHORISED OPERATING SCOPE (WHERE THE SOFTWARE MAY RUN)
+3.1 Single authorised locus. Every licence in this Agreement, including every
+commercial right, is granted only for running the unmodified Delivered Build
+inside the Official Host, at a supported version. The grant travels with the
+Official Host and does not travel with the file.
+3.2 Plugins inside the official ecosystem are welcome. Inside the Official
+Host you may freely install, enable, disable, update, stack and combine the
+Software with any number of Companion Plugins, and Companion Plugins may call,
+feed, react to or orchestrate the Software through the host's official
+interfaces and its ordinary exposed behaviour. DSH is itself a plugin
+ecosystem; loading other legitimate plugins alongside this one, and letting
+them interoperate, is expected use and is expressly permitted, provided no
+Companion Plugin Modifies the Delivered Form, performs Reverse Analysis or
+Extraction upon it, or is used to do anything Part III forbids.
+3.3 Your own surrounding layer. You may place configuration, prompts,
+directives, wrappers, dashboards, routers and other Interoperability Layers
+around the Software inside the Ecosystem, so long as every delivered byte stays
+intact and such layers contain no Extracted Technical Materials.
+3.4 Non-Official Hosts are out of scope, not licensed. Running the Software
+on, in or through any Non-Official Host is not authorised by this Agreement at
+all, regardless of purpose, and is a breach of this Article and of Article 14.
+3.5 Foreign Agent Software is addressed separately, and only, in Article 9.
+3.6 Support and compatibility follow the scope. The Author's compatibility
+work, bug fixes and updates under Article 30 are undertaken only for operation
+inside the Official Host; nothing is owed for any other locus.
+
+ARTICLE 4. THE GRANT
+4.1 Subject to your continuous compliance with Part III, Article 13 and
+Article 15, and subject always to the Authorised Operating Scope in Article 3,
+the Author grants you, for the Delivered Build, a personal, worldwide,
+non-exclusive, non-sublicensable (except as Article 18 expressly allows toward
+a single Customer for an integrated delivery), non-transferable, perpetual for so long as you
+remain compliant, fully paid-up and royalty-free licence to use the Delivered
+Form within the Ecosystem for every lawful purpose, and in particular for every
+form of Commercial Use described in this Part II.
+4.2 This grant is as broad as the Author can make it within its proper locus.
+If a specific commercial activity is not expressly prohibited in Part III,
+occurs inside the Ecosystem, and consists of operating the Delivered Build
+(rather than Modifying, Extracting from, analysing, moving off-host, or
+redistributing it), it is permitted. You do not need further consent, and the
+absence of an express mention of a business model below does not restrict the
+generality of this grant.
+
+ARTICLE 5. EVERY PERMITTED MODE OF OPERATION AND COMMERCE
+5.1 Internal and operational use. You may install, load, configure, run and
+keep the Delivered Build, at any scale, on any number of machines, servers,
+containers, virtual machines, cloud instances and seats that you operate, for
+your own work, research-in-operation, evaluation, and business benefit, in
+each case inside the Ecosystem.
+5.2 Service and delivery models, non-exhaustively, you may:
+  (a) operate the Software as a hosted, cloud, on-premise or hybrid service
+      and sell access by subscription, membership, metered/usage billing,
+      seat licence, token/credit packs, retainer, one-off fee, or any other
+      pricing model, at any price;
+  (b) provide agency, consulting, advisory, implementation, integration,
+      customisation-of-your-own-layer, deployment, migration, operation,
+      maintenance, training, support and turnkey services that use it;
+  (c) resell, act as agent or distributor for, or white-label the *service*
+      (not the code), including operating it under your own brand toward end
+      users while you remain the operator;
+  (d) run it for multiple Customers in single- or multi-tenant environments,
+      in shared or dedicated infrastructure, in any industry and for any
+      Customer type (individuals, businesses, enterprises, agencies,
+      non-profits, internal teams);
+  (e) use it to produce deliverables, content, analysis, code, reports, media
+      or other output for Clients and charge for that output or the work;
+  (f) embed its operation in the backend, pipeline, workflow, agent platform,
+      bot, product or SaaS that you offer, provided the Delivered Build is
+      operated by you inside the Ecosystem and is not handed over as a
+      standalone artefact;
+  (g) list and sell such services on any marketplace, cloud store,
+      freelancing platform, agency channel or direct channel, in any territory
+      and language;
+  (h) outsource, subcontract or delegate the *operation* to contractors under
+      your direction, provided they act on your behalf, receive no independent
+      copy rights, and are bound in writing to terms at least as protective as
+      Part III;
+  (i) perform reasonable load testing, capacity planning and operation-side
+      monitoring needed to run the service (this is operation, not Reverse
+      Analysis, and must not inspect internal construction);
+  (j) make and keep operational, backup, disaster-recovery and build-image
+      copies as needed to provide the service.
+
+ARTICLE 6. MONEY, ATTRIBUTION AND DISCLOSURE
+6.1 You set every price and term of your commercial offering. The market is
+yours.
+6.2 You retain one hundred percent (100%) of all revenue, fees, savings and
+other consideration from permitted use. You owe the Author no royalty, no
+revenue or profit share, no per-seat or per-deployment fee, no attribution fee,
+no renewal fee, and no reporting, accounting or audit of your earnings.
+6.3 No copyleft, no viral effect. Nothing in this Agreement requires you to
+disclose, publish, license back, or open-source your service, your
+Interoperability Layers, your infrastructure, your pricing, your Customer
+list, or any work you build around the Software. Your commercial stack remains
+yours and closed if you wish.
+6.4 No attribution is required toward end users. You are not required to
+display the Author's name, mark, or a "powered by" notice in your service,
+interface, deliverables or marketing. You may, at your option, acknowledge use,
+but you are never obliged to. (This freedom of non-disclosure does not permit
+the reverse: claiming in public that you authored the Delivered Build itself,
+which Article 16 forbids.)
+6.5 You may freely enter into Customer contracts, terms of service, SLAs and
+warranties toward your Customers on any terms, provided those cannot bind the
+Author and do not purport to transfer any right in the Delivered Build beyond
+this Agreement.
+
+ARTICLE 7. WHAT IS YOURS (AND REMAINS YOURS)
+7.1 Your Interoperability Layers are and remain your exclusive property: your
+configuration, your prompts and preference directives, your rule sets written
+for your own use, your workflows, orchestration, your own independent code,
+your integrations, your UI, your data, and the outputs produced by running the
+Software. The Author claims no right, title or share in any of them.
+7.2 Outputs. Results, text, code, analysis and other output generated by
+running the Delivered Build for you or your Customers belong to you or your
+Customer as between you and the Author; the Author makes no claim to them.
+7.3 You may protect, sell, license or keep secret any of the materials in
+7.1–7.2 on any terms you choose.
+7.4 Boundary of ownership: 7.1–7.3 cover only materials that are genuinely
+external to the Delivered Build, that do not Modify it, and that contain no
+Extracted Technical Materials. They never cover the Delivered Build itself.
+
+ARTICLE 8. COPIES, DEPLOYMENT AND CUSTOMER-SIDE INSTALLS YOU OPERATE
+8.1 You may make any number of copies reasonably required to operate permitted
+Services and to maintain reliable backups.
+8.2 You may install the Delivered Build on infrastructure you control,
+including infrastructure leased for a Customer, while you retain operation and
+administrative control.
+8.3 You may script, automate and containerise deployment of the *unmodified*
+Delivered Build; deployment automation that surrounds but does not alter the
+Delivered Form is permitted.
+
+
+================================================================================
+PART III — WHAT YOU MAY NOT DO (THE PROHIBITIONS, STATED AT LENGTH)
+================================================================================
+
+ARTICLE 9. THE FENCED GREY ZONE: OPERATION OUTSIDE THE OFFICIAL HOST
+9.1 Characterisation. Moving the *unmodified* Delivered Build, without opening
+or changing it, into Foreign Agent Software to see whether it will run there is
+not treated by this Agreement as the same grade of act as Reverse Analysis or
+Modification. It is nonetheless NOT an authorised deployment. It is a
+semi-grey-to-grey area: tolerated-but-not-licensed, unsupported, unwarranted,
+and enclosed on every side by the fences in this Article and by the rest of
+Part III, which continue to apply in full wherever the files happen to be.
+9.2 The only act covered. The grey tolerance in 9.1 reaches exactly one act:
+attempting to execute the byte-for-byte unchanged Delivered Build in a foreign
+runtime. It grants no other right and no intellectual-property clearance of
+any kind.
+9.3 No immunity to the hard prohibitions. In a foreign runtime, as everywhere
+else, you remain strictly forbidden from Reverse Analysis (Article 10),
+Modification (Article 11), Extraction (Article 12), AI-assisted reconstruction
+(Article 13), Circumvention and host-stripping (Article 14), Redistribution
+(Article 15), misappropriation (Article 16) and assisting others (Article 17).
+The grey zone does not dilute, suspend, narrow or create any exception to any
+of them.
+9.4 No making-it-fit. You may not, in order to make the Software run in
+Foreign Agent Software, write or apply any loader, shim, adapter, hook, patch,
+stub, mock, polyfill, binding-removal or compatibility edit, nor alter any
+configuration value whose effect is to defeat host binding. Doing any of these
+leaves the grey zone at once and becomes a hard breach of Article 11 and
+Article 14. Adaptation is allowed only through an external Interoperability
+Layer that leaves the Delivered Form byte-for-byte intact.
+9.5 Expected non-function. Because the Delivered Build is bound to the Host
+Environment and carries Technical Protection Measures, off-host operation may
+refuse to start, report an error, disable features or stop. Under Article 20
+that is intended behaviour, not a defect; it gives rise to no support request,
+fix, refund, chargeback, warranty claim or takedown right, and the Author has
+no duty to make any foreign-runtime operation succeed.
+9.6 No productising the grey path. You may not package, market, distribute or
+deliver the Software as a "port", "compatible edition", foreign-host plugin or
+standalone product, nor hand a runnable copy to a Customer for use outside the
+Ecosystem. The Service/Code test in Article 18 governs Customer delivery
+without exception: only results delivered while you operate are permitted,
+never a freely runnable off-host copy.
+9.7 No endorsement, no reliance. The Author does not recommend, endorse,
+certify, maintain or support any off-host use, makes no representation that it
+is lawful or functional in your setting, and disclaims all responsibility for
+it. You bear sole responsibility for compliance with the terms of every
+foreign runtime and with all laws that apply to such use (Article 29).
+9.8 Revocable tolerance, no waiver. The grey tolerance is a statement about
+this Delivered Build only. The Author may narrow or withdraw it in any later
+build, and no course of tolerance, now or later, waives any right or estops the
+Author from enforcing the hard prohibitions. Reliance on the grey zone is at
+your own risk and cannot be argued as an granted licence.
+
+ARTICLE 10. NO REVERSE ANALYSIS, INCLUDING FOR RESEARCH OR LEARNING
+10.1 You shall not perform, attempt, or commission Reverse Analysis of any
+part of the Software.
+10.2 This prohibition applies regardless of purpose or motive. It expressly
+includes, and does not permit, Reverse Analysis undertaken for:
+  (a) academic or scientific research;
+  (b) study, learning, personal understanding, curiosity or skill development;
+  (c) security research, vulnerability research or "responsible disclosure"
+      preparation;
+  (d) interoperability research or discovering interfaces;
+  (e) benchmarking whose method requires inspecting internals;
+  (f) preparing any publication, thesis, article, video, post, talk or course
+      about the internals;
+  (g) evaluating whether to build a competing or similar product.
+  For clarity: simply *using* the Software to do work and observing its
+  external, documented behaviour is not Reverse Analysis; opening, decoding or
+  dissecting its delivered form is, and is not licensed even for research.
+10.3 The narrowest exception: where, and only to the extent that, mandatory
+applicable law makes a particular act non-waivable, that act is allowed to
+that minimum extent and no further, and only after you have given the Author
+prior written notice and a reasonable period to provide information or a
+remedy, so as to avoid any unnecessary disclosure. Curiosity, research,
+study, commerce and competition are not such mandatory-law exceptions.
+
+ARTICLE 11. NO MODIFICATION, HOWEVER SLIGHT
+11.1 You shall not Modify the Delivered Build, in whole or in part, by any
+means, and shall not create or cause any Derivative of it. This applies to
+changes of any size, including corrections, cosmetic edits, renaming,
+translations of its code, parameter or threshold changes, feature toggles by
+editing files, "minor patches", compatibility edits, and removal of any part.
+11.2 You shall not recompile, repackage, re-bundle, merge, split, reorder,
+re-encode, or re-emit the Delivered Build, nor combine it in a way that
+transforms its files.
+11.3 Desired adaptation must instead be achieved solely through an
+Interoperability Layer that leaves every delivered byte intact. If an
+adaptation cannot be achieved without touching the Delivered Form, it is not
+permitted (and, off-host, Article 9.4 additionally applies).
+11.4 You shall not correct, "fix", or port the Delivered Build yourself; any
+defect or porting need may be reported to the Author under Article 22, and the
+Author alone decides whether and how to address it.
+
+ARTICLE 12. NO EXTRACTION OF TECHNICAL MATERIALS
+12.1 You shall not Extract any Technical Materials from the Software, and you
+shall not use any Technical Materials for any purpose outside operating the
+unmodified Delivered Build, whether for your own or another product, service,
+model, paper, teaching, sharing or business.
+12.2 This prohibits, without limitation:
+  (a) copying, rewriting or recreating an algorithm, scheduler, pipeline,
+      heuristic, workflow, toolbox design or architecture discerned from the
+      Software, even in a different language, with different names, or in an
+      "inspired-by"/clean-room-claimed form where the understanding came from
+      inspection;
+  (b) harvesting its embedded prompts, prompt structures, templates, rule
+      sets, parameters, thresholds, weightings, ordering or scoring schemes;
+  (c) using its Technical Materials to train, fine-tune, prompt-engineer,
+      seed or evaluate any model, system or dataset;
+  (d) publishing walkthroughs, breakdowns, annotated explanations, diagrams,
+      reconstructions or "how it works" material derived from inspection;
+  (e) taking ideas "after looking", i.e. building anything that reproduces a
+      technical element of the Software where the element was learned by
+      opening, analysing or being walked through the Delivered Form.
+12.3 Independent creation without inspection is not restricted by 12.1; the
+prohibition reaches only material actually derived from the Software through
+access to its Delivered Form beyond ordinary external use.
+
+ARTICLE 13. NO AI-AUTOMATED OR AUTOMATED RECONSTRUCTION
+13.1 You shall not submit, paste, upload or feed the Delivered Build, its
+fragments, its outputs used as traces, or its Technical Materials into any
+AI-Assisted Means for the purpose of explaining, summarising, annotating,
+naming, translating, simplifying, decompiling, reconstructing, regenerating,
+cloning, or producing an equivalent or improved implementation.
+13.2 You shall not use AI-Assisted Means to perform, accelerate or
+approximate anything Article 10, 11 or 12 forbids, and shall not prompt any
+person or system to do so.
+13.3 You shall not build or distribute datasets, corpora, mappings, model
+weights or automated pipelines whose purpose is such reconstruction or
+Extraction.
+
+ARTICLE 14. NO CIRCUMVENTION, NO TAMPERING, NO LEAVING THE AUTHORISED HOST
+14.1 You shall not Circumvent, and shall not probe for the purpose of
+defeating, any Technical Protection Measure, anti-analysis control, timing or
+integrity check, self-defence behaviour, or binding to the Host Environment.
+14.2 You shall not detach the Software from the Official Host, attempt to run
+extracted parts standalone, emulate or stub the host to exercise internal
+paths, or remove any binding or check. Running the unchanged whole inside
+Foreign Agent Software is governed solely by Article 9 and does not permit any
+act in this Article.
+14.3 You shall not run, or attempt to run, the Software on or through any
+Non-Official Host (Article 3.4).
+14.4 You shall not capture memory, snapshots, core dumps, heap/stack state,
+inter-process traffic, files written at runtime, or network traffic in order
+to reconstruct, decode or coalesce protected logic, even fragment by fragment
+over time.
+14.5 You shall not remove, alter, forge or hide any integrity, version,
+licence or provenance marker, nor trigger or simulate failure of a protection
+control.
+
+ARTICLE 15. NO REDISTRIBUTION, PUBLICATION OR SHARING OF THE BUILD
+15.1 Except for the single-Customer bundling expressly permitted by Article
+18, you shall not Redistribute the Delivered Build (modified or unmodified,
+whole or partial) to anyone, by any means, whether free or for payment.
+15.2 Without limiting 15.1, you shall not upload it to any public or shared
+repository, registry, package/plugin marketplace, forum, chat group, file
+host, cloud drive with shared access, torrent, mirror or backup-sharing
+service accessible by third parties; nor fork it into a public space.
+15.3 You shall not sell, resell, rent, lease, lend, pledge, give away or
+sublicense copies of the Delivered Build as a product.
+15.4 You shall not make any interface, link, endpoint or directory from which
+a third party can download or extract a copy of the Delivered Build.
+15.5 Providing Customers the *result* of the Software as a Service is allowed
+under Part II and is not Redistribution; handing over the files is.
+
+ARTICLE 16. NO MISAPPROPRIATION, FALSE CLAIM OR NAME TAKEOVER
+16.1 You shall not present the Delivered Build, in whole or part, as work
+authored by anyone other than the Author, and shall not claim, expressly or
+by implication, that you wrote its underlying code.
+16.2 You shall not rebrand, white-label the *code*, rename, skin or repackage
+the Delivered Build itself (white-labelling the surrounding *service* you
+operate is allowed under Article 5.2(c); rebranding the delivered files is
+not).
+16.3 You shall not register, squat on, or impersonate the Software's name,
+logos, identifiers or repository identity, nor file false ownership claims,
+takedowns, reports or disputes against the Author's own distributions.
+16.4 You shall not remove or misrepresent copyright, licence or version
+notices.
+
+ARTICLE 17. NO ASSISTING, PROCURING OR INSTRUCTING OTHERS
+17.1 You shall not cause, enable, assist, facilitate, fund, instruct,
+commission, license, host for, or incentivise any person to do anything
+forbidden by this Part III.
+17.2 You shall not provide, sell or share tools, scripts, loaders, patches,
+keygens, mappings, tutorials, guides, prompts or services whose purpose or
+main use is to enable another to Modify, Extract from, analyse, reconstruct,
+circumvent, move off-host in breach of Article 9, or redistribute the Software.
+17.3 Where a contractor or Customer under you would need to do a prohibited
+act to perform, you may not direct them to do it, and you remain liable if
+they do at your instigation.
+
+
+================================================================================
+PART IV — THE SINGLE LINE BETWEEN PERMITTED AND PROHIBITED
+================================================================================
+
+ARTICLE 18. THE SERVICE/CODE TEST AND CUSTOMER BUNDLING
+18.1 Permitted (Service). It is permitted to operate the Delivered Build and
+sell access, results and outcomes while you remain the operator and the
+Customer cannot keep, extract or pass on a standalone running copy after the
+engagement.
+18.2 Prohibited (Code transfer). It is prohibited to transfer to any third
+party a reusable copy of the Delivered Build that they may own, run apart from
+you, modify, or pass onward.
+18.3 Single-Customer bundling exception. You may place an unmodified copy
+inside an integrated, specific-Customer delivery only if all of the following
+hold:
+  (a) the Delivered Build is byte-for-byte unchanged and keeps its protection;
+  (b) this Agreement and the copyright notice accompany it verbatim;
+  (c) the Customer is bound in writing by terms no less protective than Part
+      III and receives no broader right;
+  (d) no separate price is charged for the Delivered Build as such (it is part
+      of the priced integrated service/delivery);
+  (e) the copy is not placed on any public or shared channel;
+  (f) it is operated within the Authorised Operating Scope of Article 3;
+  (g) you remain responsible for the Customer's compliance as if the acts were
+      your own.
+18.4 Practical test. If, after the relationship ends, the counterparty can
+still run the protected software without you and hand a copy to someone else,
+the arrangement is a prohibited transfer under 18.2; if they can only obtain
+results while you operate it, it is a permitted Service under 18.1.
+
+
+================================================================================
+PART V — OWNERSHIP, PROTECTION AND BINDING
+================================================================================
+
+ARTICLE 19. OWNERSHIP; LICENCE NOT SALE
+19.1 The Software is licensed, not sold. As between you and the Author, the
+Author owns all right, title and interest in the Software, its Delivered
+Form, its Technical Materials, and all intellectual property rights therein.
+19.2 No right, title or interest in any of the foregoing is transferred to
+you. All rights not expressly granted in Part II are reserved.
+19.3 Marks. This Agreement grants no right to use the Author's trade marks,
+logos or trade names, except that a factual statement that your service uses
+the Software is allowed.
+
+ARTICLE 20. TECHNICAL PROTECTION; HOST BINDING; EFFECT OF TAMPERING
+20.1 The Delivered Build contains Technical Protection Measures and is bound
+to its Host Environment; these are intentional, functional features.
+20.2 Removing it from the Official Host, Modifying it, Circumventing its
+controls, running it on a Non-Official Host, or feeding it altered input of a
+kind meant to defeat its checks may cause it to stop operating. Such an
+outcome is intended behaviour, not a defect. (The narrow grey tolerance for
+running the unchanged whole in Foreign Agent Software is Article 9 and changes
+nothing here.)
+20.3 The Author has no obligation to make a modified, extracted, separated,
+off-host or tampered copy function, and such non-functioning gives rise to no
+refund, chargeback, warranty claim or takedown right.
+20.4 You acknowledge the Author's legitimate interest in protecting the
+undelivered source and the proportionality of Part III.
+
+ARTICLE 21. DATA, PRIVACY AND LOCAL OPERATION
+21.1 The Delivered Build is designed to operate locally and contains no
+telemetry, call-home channel, or self-initiated network collection beyond the
+ordinary operation of the Host Environment.
+21.2 The Author does not collect your prompts, data, keys, conversations or
+workloads through the Software. You are the controller of, and solely
+responsible for, the data you and your Customers process and for any consent,
+security and legal basis required.
+
+ARTICLE 22. FEEDBACK
+22.1 Bug and compatibility reports through official channels are welcome.
+22.2 Submissions whose purpose or effect is to Modify, Extract, reconstruct,
+expose or weaken the Software are not accepted and may be discarded.
+22.3 By submitting feedback the Author chooses to adopt, you grant the Author
+a perpetual, worldwide, royalty-free, irrevocable licence to use it, and you
+may not condition adoption on disclosure of source.
+
+
+================================================================================
+PART VI — WARRANTY, LIABILITY, TERM AND THE CONSEQUENCES OF BREACH
+================================================================================
+
+ARTICLE 23. PREVIEW NATURE; NO PERFORMANCE UNDERTAKING
+23.1 A Delivered Build identified as preview, experimental or pre-release is
+provided on that basis; its controls, internals and interfaces may change
+between builds without notice.
+23.2 Any statement about capability, depth, or comparison with named
+third-party models or products states a design direction and is not a
+warranted characteristic, outcome, benchmark, ranking or business result.
+
+ARTICLE 24. DISCLAIMER OF WARRANTIES
+24.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS
+PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT WARRANTY OF
+ANY KIND, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE.
+24.2 THE AUTHOR DISCLAIMS ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY,
+SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+NON-INFRINGEMENT, AND ANY WARRANTY FROM COURSE OF DEALING OR USAGE. THE
+AUTHOR DOES NOT WARRANT THAT THE SOFTWARE IS ERROR-FREE, SECURE, UNINTERRUPTED,
+OR FITTED TO YOUR PURPOSE. ALL OPERATIONAL RISK RESTS WITH YOU.
+
+ARTICLE 25. LIMITATION OF LIABILITY
+25.1 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AUTHOR IS NOT LIABLE FOR ANY
+INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES,
+OR ANY LOSS OF PROFITS, REVENUE, DATA, GOODWILL OR BUSINESS, ARISING OUT OF OR
+RELATED TO THE SOFTWARE OR THIS AGREEMENT, UNDER ANY THEORY, EVEN IF ADVISED
+OF THE POSSIBILITY.
+25.2 WHERE LIABILITY CANNOT BE EXCLUDED, THE AUTHOR'S TOTAL CUMULATIVE
+LIABILITY IS LIMITED TO THE GREATER OF (A) THE AMOUNT YOU ACTUALLY PAID THE
+AUTHOR FOR THE DELIVERED BUILD (ZERO IF RECEIVED FREE), AND (B) THE MINIMUM
+PERMITTED BY LAW.
+25.3 You are responsible for backing up your own systems and data and for
+suitability of the Software for your intended commercial use.
+
+ARTICLE 26. TERM AND AUTOMATIC TERMINATION
+26.1 This Agreement is effective until terminated. It terminates automatically
+and immediately, without notice or cure period, upon any breach of Part III,
+Article 18 or Article 20 by you or anyone under your direction.
+26.2 Upon termination all rights cease at once; you must stop every use and
+permanently destroy all copies of the Delivered Build in your possession or
+control, including backups and Customer copies not otherwise authorised.
+26.3 Acts before termination remain your liability. Termination does not limit
+the remedies stated in Article 27 or any other remedy available at law.
+26.4 Survival: Articles 1–2, 7.4, 9–17, 19–21, 24–27 and 30–31 survive
+termination.
+
+ARTICLE 27. CONSEQUENCES AND REMEDIES IF YOU CROSS A HARD LINE
+27.1 The parties agree that a breach of Part III, Article 18 or Article 20
+harms the Author in ways that cannot be fully measured in money, and that the
+consequences below are proportionate and agreed in advance.
+27.2 Immediate loss of rights. Every licence and permission ends automatically
+and at once on such a breach, with no grace or cure period and no further
+notice. Every continued use after that point is unlicensed.
+27.3 Destruction and stand-down. On demand you must (a) cease all use and all
+commercial activity involving the Software, (b) permanently destroy every
+copy in your possession or control, including source-derived, backup, cache,
+image, server and Customer copies, and (c) certify that destruction in
+writing, identifying the systems from which it was removed.
+27.4 Injunctive relief. The Author may seek temporary, interim and permanent
+injunctive or other equitable relief in any competent forum to stop a breach
+or threatened breach, without posting bond and without having to prove actual
+damages, and you will not oppose the grant of such relief.
+27.5 Monetary exposure, cumulative and non-exclusive. You are liable for:
+  (a) all actual damages, losses and costs the Author suffers;
+  (b) full disgorgement and an account of profits of every revenue, profit,
+      fee, saving or other benefit, direct or indirect, obtained by you or any
+      related party from the breaching conduct, which the Author may elect to
+      recover in place of, or in addition to, actual damages;
+  (c) the Author's reasonable enforcement and evidence costs, including
+      attorney and solicitor fees, notarisation and evidence-preservation
+      fees, forensic and expert fees, investigation costs, platform-takedown
+      and filing fees, travel and communication costs;
+  (d) statutory, administrative or criminal exposure where the breaching
+      conduct also violates applicable law, which the Author remains free to
+      refer to the competent authorities; nothing in this Agreement limits
+      that referral.
+27.6 Takedown cooperation. You must promptly remove or disable access to the
+breaching material, repository, listing, service, download or mirror on every
+platform, marketplace, host and channel you control or can influence, and
+cooperate with the Author's takedown notices to third parties.
+27.7 Aggravated and continuing breach. Repeated, sustained, deliberate or
+commercial-scale breach, or breach aimed at redistributing or reconstructing
+the Software, is treated as aggravated; the Author may state the fact and date
+of termination publicly to correct misinformation, and such a statement is not
+defamation and does not limit any other remedy.
+27.8 Remedies are cumulative. The remedies in this Article and elsewhere in
+this Agreement and at law or in equity are cumulative; exercising one does not
+elect or exhaust another.
+27.9 No waiver, no estoppel. The Author's delay, forbearance or failure to act
+on any breach is not a waiver and does not estop later enforcement against you
+or anyone else; partial enforcement does not narrow any term.
+
+
+================================================================================
+PART VII — THIRD PARTIES, COMPLIANCE, GENERAL
+================================================================================
+
+ARTICLE 28. THIRD-PARTY HOST AND COMPONENTS
+28.1 DeepSeek Harness (DSH) is a third-party product. This Agreement grants
+no right in DSH, is not affiliated with or endorsed by its makers, and you
+are solely responsible for holding and complying with any DSH access and
+terms.
+28.2 The Authorised Operating Scope runs only to the Official Host. This
+Agreement grants no right and offers no support for any Non-Official Host and,
+subject to the fenced grey zone in Article 9, no clearance for Foreign Agent
+Software.
+28.3 Third-party runtime components used by the Software remain under their
+own licences; this Agreement grants no additional right in them.
+28.4 You are responsible for resolving any conflict between this Agreement and
+the terms of any host, marketplace or third party, and no conflict expands
+your rights.
+
+ARTICLE 29. LAWFUL USE AND COMPLIANCE
+29.1 You shall use the Software only in compliance with all laws applicable to
+you, your Customers and your jurisdictions, including export-control,
+sanctions, data-protection, consumer-protection and industry rules.
+29.2 The broad commercial grant does not authorise unlawful activity, and you
+are solely responsible for the lawfulness of everything you build and sell.
+
+ARTICLE 30. UPDATES AND DISCONTINUATION
+30.1 The Author may, in its sole discretion, provide updates or new builds,
+change features, track new Official Host versions, and licence later builds
+under different terms; the terms of each Delivered Build govern that build.
+30.2 The Author intends, without binding itself, to follow supported Official
+Host releases with compatibility builds, but has no obligation to maintain,
+support, update, or ensure compatibility with any future host version, and may
+discontinue the Software at any time without liability.
+30.3 The Author may narrow or withdraw the Article 9 grey tolerance in any
+later build.
+
+ARTICLE 31. GENERAL
+31.1 Governing law and disputes. This Agreement is governed by the laws of the
+People's Republic of China, excluding conflict-of-laws rules. The parties shall
+first negotiate in good faith for thirty (30) days; failing that, disputes
+go to the competent people's court at the Author's domicile. This does not
+limit the Author's right to seek urgent injunctive relief for intellectual
+property protection in any competent forum.
+31.2 Severability. An invalid or unenforceable term is reformed to the minimum
+extent needed and the rest remains in force.
+31.3 Entire agreement. This Agreement is the entire agreement on its subject
+and supersedes prior understandings.
+31.4 No waiver. No delay or omission in enforcement is a waiver (see also
+27.9).
+31.5 No transfer by you. You may not assign or transfer this Agreement or your
+rights without the Author's prior written consent; any purported transfer
+without it is void. The Author may assign freely.
+31.6 Language. This Agreement is written in English, which is the controlling
+text; any translation is for convenience only.
+31.7 Independent obligations. Each prohibition in Part III is independent and
+severable from the others.
+31.8 Notices. Official notices are given through the Author's published
+repository channels.
+
+
+--------------------------------------------------------------------------------
+ACCEPTANCE
+--------------------------------------------------------------------------------
+Installing, copying, downloading, accessing, running, deploying or
+commercialising the Software constitutes acceptance of this Agreement. If you
+do not accept it, your sole remedy is not to use the Software and to delete it.
+
+================================================================================
+Copyright (c) 2026 YUEYUEXYS and the dsh-think-ultra authors.
+All rights not expressly granted herein are reserved.
+================================================================================

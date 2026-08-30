@@ -1,0 +1,57 @@
+{
+  "tier": "standard",
+  "modules": {
+    "review": true,
+    "branches": true,
+    "cache": true,
+    "snapshot": true,
+    "project": true,
+    "devil": true,
+    "recheck": true,
+    "bestof": true,
+    "sparring": false,
+    "vtile": true,
+    "vcross": true,
+    "treeforge": true,
+    "judgepanel": true,
+    "execgate": true,
+    "l3forge": true,
+    "antiloop": true
+  },
+  "globals": {
+    "cache": true,
+    "autosnapshot": true,
+    "driftAlert": true,
+    "debugLog": true,
+    "taskGuard": true
+  },
+  "sliders": {
+    "deep": 4,
+    "branch": 4,
+    "memory": 4,
+    "code": 3,
+    "verify": 3,
+    "falsify": 3,
+    "exec": 3,
+    "safety": 2,
+    "agent": 3,
+    "longcode": 3,
+    "consist": 3,
+    "heal": 3,
+    "reclaim": 3
+  },
+  "snapshotDir": null,
+  "kvBudgetTokens": 96000,
+  "branchCount": 3,
+  "panelState": {
+    "language": "zh",
+    "ultraActive": true,
+    "guardEnabled": true,
+    "prefs": "",
+    "modelSlots": {
+      "flash": { "sliders": { "deep": 6, "branch": 6, "memory": 6, "verify": 6, "falsify": 6, "exec": 6 }, "modules": { "treeforge": true, "judgepanel": true, "execgate": true, "l3forge": true, "antiloop": true }, "prefs": "" },
+      "vision": { "sliders": { "deep": 6, "branch": 6, "memory": 6, "verify": 6, "falsify": 6, "exec": 6, "vision": 6, "vscan": 6, "vgraph": 6 }, "modules": { "treeforge": true, "judgepanel": true, "execgate": true, "l3forge": true, "antiloop": true }, "prefs": "" },
+      "pro": { "sliders": { "deep": 6, "branch": 6, "memory": 6, "code": 6, "verify": 6, "falsify": 6, "exec": 6, "meta": 6, "abst": 6, "synth": 6, "cohere": 6, "calib": 6 }, "modules": { "treeforge": true, "judgepanel": true, "execgate": true, "l3forge": true, "antiloop": true }, "prefs": "" }
+    }
+  }
+}
