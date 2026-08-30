@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/logo.png" alt="dsh-think-ultra" width="170" />
+</p>
+
 # dsh-think-ultra
 
 A reasoning layer for DeepSeek Harness (DSH). Current build is
@@ -7,6 +11,10 @@ published, and the licence does not grant reverse analysis, modification or
 extraction (see [LICENSE](./LICENSE)).
 
 ## What "Ultra" actually is
+
+<p align="center">
+  <img src="./assets/logo.png" alt="Ultra" width="100" />
+</p>
 
 DeepSeek's API exposes four reasoning efforts: `off`, `low`, `high`, `max`.
 There is no fifth one. Send `reasoning_effort="ultra"` and the provider
