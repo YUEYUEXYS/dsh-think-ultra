@@ -728,6 +728,48 @@ repository channels.
 
 
 --------------------------------------------------------------------------------
+
+
+ARTICLE 32. PROHIBITION OF AI-ASSISTED REVERSE ENGINEERING
+32.1 You may not use any large language model, artificial intelligence system,
+automated decompiler, machine-learning-based analysis tool, or any other
+automated or semi-automated system to reverse engineer, decompile,
+deobfuscate, disassemble, extract, reconstruct, or otherwise derive the source
+code, structure, algorithms, internal logic, or proprietary implementation of
+the Software.
+32.2 This prohibition applies regardless of whether the AI or automated tool is
+operated locally, on-premises, through a cloud service, or via any third-party
+API.
+32.3 Feeding, uploading, or otherwise making available the Software's binary,
+obfuscated output, memory dump, runtime artifacts, network traffic, or any
+derivative thereof to any AI or automated system for the purpose of
+reconstruction, extraction, or reverse engineering constitutes a material breach
+of this Agreement.
+32.4 This Article is in addition to, and not in limitation of, the prohibitions
+in Article 10 (No Reverse Engineering) and Article 11 (No Extraction).
+
+ARTICLE 33. TEMPORARY REVIEWER LICENSE
+33.1 The Author may, at its sole discretion, grant a temporary, time-limited,
+non-transferable, revocable review license ("Reviewer License") to a designated
+reviewer, auditor, or ecosystem maintainer for the sole purpose of security
+review, compatibility verification, or ecosystem indexing.
+33.2 A Reviewer License is valid only for the explicitly stated Review Period,
+after which it automatically expires and all rights under it terminate.
+33.3 During the Review Period, the holder may inspect, test, and evaluate the
+Software's runtime behavior, API surface, integration points, and observable
+outputs.
+33.4 A Reviewer License does not permit deobfuscation, reverse engineering,
+source-code extraction, or redistribution of the Software or any part thereof,
+except as explicitly authorised in writing by the Author.
+33.5 The holder must treat all non-public information observed during the review
+as confidential and may not disclose it to any third party without the Author's
+prior written consent.
+33.6 The Author may revoke a Reviewer License at any time for any reason,
+whereupon the holder must immediately cease all review activity and return or
+destroy any confidential information obtained.
+33.7 Any use of the Software beyond the scope of an active, unexpired Reviewer
+License is governed by the standard restrictions of this Agreement.
+
 ACCEPTANCE
 --------------------------------------------------------------------------------
 Installing, copying, downloading, accessing, running, deploying or
