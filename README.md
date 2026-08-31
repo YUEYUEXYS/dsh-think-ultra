@@ -150,28 +150,65 @@ trade-off: spend the compute, raise the floor, and check the result harder.
 
 ## What it is reaching for, and what it does not promise
 
-Start from the part that is certain. The wire floor is native `max`, and every
-heavier notch adds **real, extra `max` calls** on top of it instead of merely
-relabelling the request. So with the heavy axes open, both Flash and Pro are,
-by construction, a substantial step above their own bare-`max` baseline - that
-gain is how the pipeline works, not an aspiration.
+### The part that is certain
 
-The design target beyond that is deliberately ambitious. Flash on Ultra, at
-full tilt, is built to close most of the gap to - and, on a meaningful share
-of long-chain reasoning, multi-step execution and code-engineering tasks, to
-punch upward toward - the class a weight tier above it: the Claude 5 / Claude
-Opus 5 line and GPT-5-class systems. Pro already starts as the stronger model,
-sitting close to that tier on bare `max`; Pro on Ultra is built to run right
-alongside it.
+Start from what the machinery guarantees regardless of any outside model. The
+wire floor is native `max` - the strongest effort DeepSeek actually accepts -
+and every heavier notch adds **real, additional, independent `max` calls** on
+top of it rather than relabelling the request. With the heavy axes open, then,
+both Flash and Pro are, by construction, a substantial step above their own
+bare-`max` baseline: more samples, more independent passes, more verification,
+and more reconciliation before anything reaches you. That gain is how the
+pipeline is built, not a hope.
 
-Be clear-eyed about what is and is not claimed. This is an **experimental
-preview**, and a full benchmark battery against those flagships has not been
-run. Everything above is the architectural direction and the theoretical
-result of stacking additional `max` compute - a target the system was built
-against, not a warranted ranking, measured score or business outcome (the
-licence says the same in Article 23). It is expected to match or beat the bulk
-of ordinary models in its own lane; whether it beats a specific flagship on
-*your* task is something only your own tests can settle.
+### The two reference points
+
+The design is aimed at two specific flagships that sit a weight class above
+the underlying model:
+
+- **Flash on Ultra, fully opened,** is built to close most of the gap to - and,
+  on a meaningful share of long-chain reasoning, multi-step execution and
+  code-engineering tasks, to punch upward toward - **Fable 5**-class
+  performance. Flash is the small, cheap model; the entire point is that
+  stacked test-time compute lets it trade blows well above its listed tier.
+- **Pro on Ultra** starts from the stronger model that already sits close to
+  that tier on bare `max`, and is built to run right alongside **Opus 5**-class
+  systems: a deeper tournament, the full metacognition/abstraction/synthesis
+  block, the largest toolbox and every stability axis the build exposes.
+
+Vision inherits the entire Flash target and layers the visual close-reading
+axes on top - it is Flash with eyes, held to the same reference points rather
+than a separate, weaker track.
+
+### Where this goes next
+
+The architecture is deliberately not capped at today's models.
+
+- **As the host gets stronger, Ultra rises with it.** Ultra is a layer above
+  DeepSeek's own `max`, not a patch frozen against one snapshot. When DeepSeek
+  ships a newer base - v4.1, v5 and beyond - the floor rises with it, and the
+  same tournament, executable-verification, cross-review and recursive
+  reasoning-tree stack compounds on top of the new baseline instead of being
+  rebuilt from zero. A stronger native `max` is a stronger starting point for
+  every Ultra tier.
+- **As the build gets more abstract, the target moves up.** The end state is
+  not "tie one named flagship". It is a depth engine whose notches, toolboxes
+  and multi-agent scheduling keep being pushed toward whatever the next
+  generation of frontier systems looks like. The locked `zenith` notch and the
+  deliberately different per-axis ceilings exist so there is real headroom to
+  aim there later without destabilising the current preview.
+
+### What is, and is not, promised
+
+Be clear-eyed. This is an **experimental preview**, and a full benchmark
+battery against those flagships has not been run. Everything above is the
+architectural direction and the theoretical result of stacking additional
+`max` compute - a target the system was built against, not a warranted
+ranking, measured score or business outcome (the licence says the same in
+Article 23). It is expected to match or beat the bulk of ordinary models in
+its own lane; whether it beats a specific named flagship on *your* task is
+something only your own tests can settle. The names Fable 5 and Opus 5 are
+design reference points, not claims of a finished head-to-head comparison.
 
 ## Why the source is not in this repository
 
