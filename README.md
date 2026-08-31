@@ -150,17 +150,28 @@ trade-off: spend the compute, raise the floor, and check the result harder.
 
 ## What it is reaching for, and what it does not promise
 
-The design target is blunt: a smaller, cheaper model running on Ultra, with
-the heavy axes open, should approach and on a meaningful share of long-chain
-reasoning, multi-step execution and code-engineering tasks overtake a model a
-weight class above it — the Claude 5 line, GPT-5-class systems, that tier.
-Pro on Ultra is aimed straight at Mythos 5-class performance. Those are the
-reference points the architecture was built against.
+Start from the part that is certain. The wire floor is native `max`, and every
+heavier notch adds **real, extra `max` calls** on top of it instead of merely
+relabelling the request. So with the heavy axes open, both Flash and Pro are,
+by construction, a substantial step above their own bare-`max` baseline - that
+gain is how the pipeline works, not an aspiration.
 
-They are reference points, not a guarantee. This is an **experimental
-preview**. Any comparison to named third-party models states a direction of
-travel, not a warranted benchmark, ranking or business outcome (the licence
-says the same in Article 23). Judge it on your own tasks.
+The design target beyond that is deliberately ambitious. Flash on Ultra, at
+full tilt, is built to close most of the gap to - and, on a meaningful share
+of long-chain reasoning, multi-step execution and code-engineering tasks, to
+punch upward toward - the class a weight tier above it: the Claude 5 / Claude
+Opus 5 line and GPT-5-class systems. Pro already starts as the stronger model,
+sitting close to that tier on bare `max`; Pro on Ultra is built to run right
+alongside it.
+
+Be clear-eyed about what is and is not claimed. This is an **experimental
+preview**, and a full benchmark battery against those flagships has not been
+run. Everything above is the architectural direction and the theoretical
+result of stacking additional `max` compute - a target the system was built
+against, not a warranted ranking, measured score or business outcome (the
+licence says the same in Article 23). It is expected to match or beat the bulk
+of ordinary models in its own lane; whether it beats a specific flagship on
+*your* task is something only your own tests can settle.
 
 ## Why the source is not in this repository
 
