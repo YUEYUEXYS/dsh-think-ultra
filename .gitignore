@@ -35,8 +35,9 @@ meta-turn.json
 selfcheck-report.json
 *pre.patch
 *preview.patch
-cordis.patch.yml
 *.patch
+# cordis.patch.yml is REQUIRED for dsh bundle install/catalog inclusion; never ignore it
+!cordis.patch.yml
 
 # Config (keep example)
 thinking-ultra.config.json

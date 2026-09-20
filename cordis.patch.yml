@@ -1,0 +1,25 @@
+# ============================================================================
+# Think Ultra - Cordis bundle patch
+# ----------------------------------------------------------------------------
+# This is the config-row patch this package contributes when a profile adds
+# it as a bundle. Per the DSH/Cordis bundle hard rule, a bundle patch may only
+# INSERT ITS OWN plugin row - it never edits, removes or reorders rows owned
+# by the host or by another plugin. The browser client is declared separately
+# under "dsh.client" in package.json and is not inserted here.
+#
+# Compatibility contract (declarative notes for reviewers/maintainers):
+#   * host:   DeepSeek Harness (dsh) >= 0.1.2-alpha.2, Cordis >= 4.0.1, Node >= 22.6
+#   * seams:  only public service APIs are consumed -
+#               llm (listProviders / registration / adapters-updated),
+#               systemPrompt, agents (agent/created, agent/pre-step,
+#               agent/session-start, agent/turn-stopping),
+#               tools.defineTool, settings.register, webServer.register
+#   * offline: the optional native core (lib/native/*) opens NO socket and
+#               performs NO DNS/HTTP; all model traffic goes through the
+#               host's own llm adapter, never through this plugin.
+#   * effort map: the UI exposes an "Ultra" row while every outbound request
+#               is hard-wired to the host's native "max" effort (ultra->max).
+# ============================================================================
+- insert:
+    - id: thinking-ultra
+      name: dsh-think-ultra
