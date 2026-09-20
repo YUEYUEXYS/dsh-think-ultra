@@ -1,7 +1,7 @@
 {
   "name": "dsh-think-ultra",
   "version": "0.1.0",
-  "description": "Think v0.1 Stable — heavy local reasoning layer for the official DeepSeek Harness. Native max-effort base with isolated Flash/Vision/Pro depth controls, isolated velocity/apex mode profiles, reasoning toolboxes and an offline Rust core. The client bundle is delivered hardened/obfuscated; commercial operation is allowed, reverse analysis, modification, extraction and re-upload are not - see LICENSE.",
+  "description": "Think Ultra v0.1.0 — heavy local reasoning layer for the official DeepSeek Harness. Native max-effort base with isolated Flash/Vision/Pro depth controls, isolated velocity/apex mode profiles, reasoning toolboxes and an offline Rust core. The client bundle is delivered hardened/obfuscated; commercial operation is allowed, reverse analysis, modification, extraction and re-upload are not - see LICENSE.",
   "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "main": "./lib/index.js",
@@ -16,6 +16,7 @@
   },
   "files": [
     "lib",
+    "cordis.patch.yml",
     "README.md",
     "LICENSE",
     "dsh-think-ultra.config.json.example"
@@ -24,6 +25,9 @@
     "node": ">=22.6"
   },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "inject": [
@@ -38,10 +42,10 @@
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-client-ui-conversation": ">=0.1.2-alpha.2 <0.2.0",
-    "@deepseek-ai/dsh-client-ui-sidebar": ">=0.1.2-alpha.2 <0.2.0",
-    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.2-alpha.2 <0.2.0",
-    "@deepseek-ai/dsh-agent": ">=0.1.2-alpha.2 <0.2.0",
-    "@deepseek-ai/dsh-invariants": ">=0.1.2-alpha.2 <0.2.0"
+    "@deepseek-ai/dsh-client-ui-conversation": ">=0.1.2-alpha.2 <0.1.6 || >=0.1.6-alpha.2 <0.2.0-0",
+    "@deepseek-ai/dsh-client-ui-sidebar": ">=0.1.2-alpha.2 <0.1.6 || >=0.1.6-alpha.2 <0.2.0-0",
+    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.2-alpha.2 <0.1.6 || >=0.1.6-alpha.2 <0.2.0-0",
+    "@deepseek-ai/dsh-agent": ">=0.1.2-alpha.2 <0.1.6 || >=0.1.6-alpha.2 <0.2.0-0",
+    "@deepseek-ai/dsh-invariants": ">=0.1.2-alpha.2 <0.1.6 || >=0.1.6-alpha.2 <0.2.0-0"
   }
 }
