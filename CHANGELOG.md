@@ -4,6 +4,37 @@ This project follows a preview-first cadence; delivered builds are hardened
 and obfuscated, and internal implementation details are intentionally not
 disclosed here.
 
+## [0.1.0]
+
+### Stable release
+- First stable release of the hardened **Think** distribution for DeepSeek
+  Harness (package `dsh-think-ultra`).
+- Global capability control (0–20) scoped to Ultra inference; it is rendered
+  disabled on non-Ultra tiers and is fully isolated per model and mode.
+- Four isolated surfaces, persisted independently: **Flash · Velocity**,
+  **Flash · Apex**, **Pro · Velocity** and **Pro · Apex**. The Apex layer is
+  the strict superset of the Velocity base; switching model or mode is a clean
+  state transition with no cross-surface leakage.
+- First-run welcome flow with a built-in EN/中文 switch (defaults to English);
+  the persisted schema resets cleanly for first-time users.
+- Expanded reasoning toolbox and a dedicated engine set plus per-surface
+  profiles; the full set is surfaced on the host side and wired into the
+  client settings panel.
+- Optional offline native guardian core (std-only, zero network/DNS); when
+  blocked or missing, the plugin transparently falls back to its built-in JS
+  engine.
+- Distribution hardening: the client bundle ships hardened/obfuscated with
+  identifier pulverisation, string-array encryption, control-flow flattening,
+  self-defence, integrity anchoring, developer-tools detection, runtime
+  tamper / freeze detection and a non-destructive revocation mechanism. The
+  runtime never deletes user files, never performs network calls and never
+  fingerprints hardware.
+- Compatibility: DeepSeek Harness `>=0.1.2-alpha.2 <0.2.0` (covers the
+  0.1.6-alpha line), Node `>=22.6`.
+- Custom distribution licence: commercial monetisation is expressly
+  permitted and encouraged; deobfuscation, reverse engineering, modification,
+  extraction and re-upload are prohibited — see [LICENSE](LICENSE).
+
 ## [0.10.0-experimental-preview]
 
 ### Notes
